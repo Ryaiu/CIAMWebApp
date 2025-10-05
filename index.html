@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIAM Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">CIAM Web App</h1>
+            <p class="site-tagline">A simple and accessible starter experience</p>
+        </div>
+        <nav class="main-nav" aria-label="Primary">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="panel" aria-labelledby="main-heading">
+            <h2 id="main-heading">Main</h2>
+            <p>
+                Welcome to the CIAM Web App. Use the menu above to explore the
+                available sections and learn more about this example application.
+            </p>
+            <p>
+                This page is intentionally lightweight and uses semantic HTML so
+                screen reader and keyboard users can navigate the content with ease.
+            </p>
+        </section>
+
+        <section id="inventory" class="panel" aria-labelledby="inventory-heading">
+            <h2 id="inventory-heading">Inventory</h2>
+            <p>
+                Keep track of the items that are important to your organization.
+                Below is an example list of inventory categories you can expand
+                upon when customizing the application.
+            </p>
+            <ul class="inventory-list">
+                <li>Hardware devices</li>
+                <li>Software licenses</li>
+                <li>Access credentials</li>
+                <li>Support resources</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="panel" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p>
+                Have questions or feedback? Reach out to us using the accessible
+                contact methods below and we will get back to you as soon as
+                possible.
+            </p>
+            <dl class="contact-details">
+                <div>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:support@example.com">support@example.com</a></dd>
+                </div>
+                <div>
+                    <dt>Phone</dt>
+                    <dd><a href="tel:+1234567890">+1 (234) 567-890</a></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; <span id="year"></span> CIAM Web App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const yearElement = document.getElementById("year");
+        const currentYear = new Date().getFullYear();
+        if (yearElement) {
+            yearElement.textContent = currentYear;
+        }
+    </script>
+</body>
+</html>
